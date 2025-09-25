@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Portfolio — Victor Teodoro </title>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  
+  <script src="https://kit.fontawesome.com/5f68799320.js" crossorigin="anonymous"></script>
+
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#home">Portifolio <span>Profissional</span></a>
+      <ul class="nav-list">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <main id="home">
+
+  
+    <section id="sobre" class="section section-planet">
+      <div class="container section-inner">
+        <div class="bio card">
+          <img src="imagens/perfil.jpg" alt="Foto de perfil" class="perfil">
+          <div class="bio-text">
+            <h1>Victor Teodoro de Oliveira</h1>
+            <p class="role">Front-end Developer (Iniciante) - Estudante do curso de Engenharia da Computação</p>
+            <p>Meu nome é Victor Teodoro de Oliveira, Possuo 21 Anos de idade e atualmente trabalho como almoxerife em uma empresa de Elevadores e curso Engenharia da computação na universidade Santa Cecilia.</p>
+            <br>
+            <p> Sou apaixonado por games e tecnologia e tenho o sonho de algum dia trabalhar em uma das duas áreas, pois ja possuo um curso tecnico no curso de informatica para internet.</p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="projetos" class="section section-space">
+      <div class="container section-inner">
+        <h2>Projetos</h2>
+        <p class="lead">Alguns projetos feitos para estudo — exemplos com link e descrição.</p>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="imagens/projeto1.png" alt="Projeto 1">
+            <div class="project-body">
+              <h3>Projeto Figma: Behind Art</h3>
+              <p>Prototipo de rede social feito na Etec conhecido como BehindArt</p>
+              <a class="btn" href="https://www.figma.com/proto/im2ZyFoB8Dpw9NIeBueHay/BEHINDART-prototype?node-id=1-2&starting-point-node-id=1%3A2&scaling=scale-down-width" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+            </div>
+          </article>
+
+          
+          <article class="project-card">
+            <img src="imagens/projeto2.png" alt="Projeto 2">
+            <div class="project-body">
+              <h3>Prototipo de Portifolio</h3>
+              <p>Esse foi o prototipo que eu criei durante as aulas</p>
+              <a class="btn" href="prototipo/atividade2.html" target="_blank">Ver projeto</a>
+            </div>
+          </article>
+
+        </div> 
+      </div>
+    </section>
+
+    
+    <section id="contato" class="section section-nebula">
+      <div class="container section-inner narrow">
+        <h2>Contato</h2>
+        <p>Quer conversar sobre vagas, freelances ou projetos? Me mande uma mensagem.</p>
+
+      <form class="contact-form" action="#" method="post">
+  <label>
+  <br>
+    <span>Nome</span>
+    <input type="text" name="nome">
+  </label>
+
+  <label>
+    <span>E-mail</span>
+    <input type="text" name="email">
+  </label>
+
+  <label>
+    <span>Mensagem</span>
+    <textarea name="mensagem" rows="5"></textarea>
+  </label>
+
+  <button class="btn primary" type="submit">Enviar mensagem</button>
+</form>
+
+<br>
+
+<ul class="contact-links">
+  <li>
+    <a href="https://github.com/VictoriousTeodoro" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/seuusuario" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </li>
+</ul>
+
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="planet">
+        
+        <div class="planet-surface"></div>
+      </div>
+      <p>© <span id="year"></span> Victor Teodoro de Oliveira — Portfólio Parte 1</p>
+    </div>
+  </footer>
+
+  <script>
+    // Ano
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
