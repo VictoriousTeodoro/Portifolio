@@ -22,7 +22,7 @@ Meu processo de criação foi organizado em etapas:
 
 HTML5
 
-CSS3
+CSS3 + FLEXBBOX
 
 Figma
 
